@@ -11,7 +11,9 @@ namespace SeleniumTest
         public void otworzPrzegladarke()
         {
             driver = new ChromeDriver();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             driver.Url = "https://bluepartner.eu/pl/kontakt/";
+
         }
 
         public void wypelnijFormularz()
